@@ -11,5 +11,5 @@ public class RepositoryGithubApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(RepositoryGithubApplication.class, args);
-	}
+	} 
 }
