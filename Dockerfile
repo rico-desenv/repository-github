@@ -16,4 +16,5 @@ COPY --from=builder application/spring-boot-loader/ ./
 COPY --from=builder application/snapshot-dependencies/ ./
 COPY --from=builder application/application/ ./
 ENTRYPOINT ["java", "org.springframework.boot.loader.JarLauncher"]
-DOCKER build -t ricodesenv/repository-github:1.0.2
+docker build -t ricodesenv/repository-github:1.0.2
+docker run -p 8080:8080 ricodesenv/repository-github:1.0.2
